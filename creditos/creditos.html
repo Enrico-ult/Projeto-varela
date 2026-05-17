@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="creditos.css">
+
+</head>
+
+<body>
+    <audio autoplay loop id="audio" src="04 Okay, Everyone!.mp3"></audio>
+
+<button id="btn" onclick="toggle()">▶</button>
+
+<script>
+  const audio = document.getElementById('audio');
+  let playing = false;
+
+  function toggle() {
+    playing = !playing;
+    playing ? audio.play() : audio.pause();
+    document.getElementById('btn').textContent = playing ? '⏸' : '▶';
+  }
+</script>
+    <h2 class="titulo">
+        Computational <br> Resolution
+    </h2>
+    <div class="linhareta">
+        <div>
+            <div class="subtitulo">
+                <h2>
+                    Creditos
+                </h2>
+            </div>
+            <div class="nomes">
+                <p>
+                    Enrico Zafanella Corrado Castro
+                    <br>22.126.057-3
+                </p>
+                <br>
+                <p>
+                    Eric Machado da Assumpção 
+                    <br>22.126.035-9
+                </p>
+                <br>
+                <p>
+                    Esdras Vinícius Cortez Queiroz 
+                    <br>22.126.048-2
+                </p>
+                <br>
+                <p>
+                    Estevão Rodrigues de Jesus
+                    <br>22.126.081-3
+                </p>
+                <br>
+                <p>
+                    Matheus da Fonseca Leite
+                    <br>22.126.038-3
+                </p>
+                <br>
+                <p>
+                    Nicolas Chagas Pereira 
+                    <br>22.126.045-8
+                </p>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div class="subtitulo">
+                <h2>
+                    Conteudos Usados
+                </h2>
+            </div>
+            <div class="nomes">
+                <p>
+                    OST Needy Streamer Overload
+                </p>
+                <br>
+                <p>
+                    OST Doki Doki Literature Club
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
